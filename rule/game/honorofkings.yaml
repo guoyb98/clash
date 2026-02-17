@@ -1,18 +1,27 @@
 payload:
-  # Honor of Kings 国际服主要域名
-  - DOMAIN-SUFFIX,honorofkings.com
-  - DOMAIN-SUFFIX,hohglobal.com
-  - DOMAIN-SUFFIX,timi.com
-  - DOMAIN-SUFFIX,levelinfinite.com
-  - DOMAIN-SUFFIX,sgameglobal.com
-  - DOMAIN-SUFFIX,intlgame.com
-  - DOMAIN,global-game-server.hohglobal.com
-  - DOMAIN,h5.honorofkings.com
-  - DOMAIN,api.honorofkings.com
-  - DOMAIN,hok-sg-act.playerinfinite.com
-  - DOMAIN,atm-broker-tcp-hok.vasdgame.com
-  - DOMAIN,dycntw-inapps.appsflyersdk.com
-  # 关键字
-  - DOMAIN-KEYWORD,honorofkings
-  - DOMAIN-KEYWORD,hohglobal
-  - DOMAIN-KEYWORD,hok
+  # ========== 王者荣耀国际版规则（必须放在 GEOSITE,cn 之前）开始==========
+  # ========== 游戏域名（最优先）==========
+  - DOMAIN-SUFFIX,intlgame.com,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,sgameglobal.com,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,iegcom.com,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,vasdgame.com,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,edgeonedy1.com,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,wetest.net,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,hok5v5.com,🎮 王者荣耀国际版
+  # 游戏关键词（覆盖子域名）
+  - DOMAIN-KEYWORD,hok,🎮 王者荣耀国际版
+  - DOMAIN-KEYWORD,sgame,🎮 王者荣耀国际版
+  - DOMAIN-KEYWORD,hokgcloud,🎮 王者荣耀国际版
+  # ========== 精确的游戏服务器 IP（兜底）==========
+  # 只包含日志中确认出现的 IP，/32 精确匹配
+  - IP-CIDR,43.132.55.55/32,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.132.138.111/32,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.156.86.196/32,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.174.250.95/32,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.152.143.98/32,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.159.109.126/32,🎮 王者荣耀国际版,no-resolve
+  # 如果游戏更新后出现新 IP，再添加到这里
+  # ========== 腾讯反作弊/遥测 ==========
+  - DOMAIN-SUFFIX,galileotelemetry.tencent.com,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,anticheatexpert.com,🎮 王者荣耀国际版
+  # ========== 王者荣耀国际版规则（必须放在 GEOSITE,cn 之前）结束==========
