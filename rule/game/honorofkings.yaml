@@ -14,12 +14,16 @@ payload:
   - DOMAIN-KEYWORD,hokgcloud,🎮 王者荣耀国际版
   # ========== 精确的游戏服务器 IP（兜底）==========
   # 只包含日志中确认出现的 IP，/32 精确匹配
-  - IP-CIDR,43.132.55.55/32,🎮 王者荣耀国际版,no-resolve
-  - IP-CIDR,43.132.138.111/32,🎮 王者荣耀国际版,no-resolve
-  - IP-CIDR,43.156.86.196/32,🎮 王者荣耀国际版,no-resolve
-  - IP-CIDR,43.174.250.95/32,🎮 王者荣耀国际版,no-resolve
-  - IP-CIDR,43.152.143.98/32,🎮 王者荣耀国际版,no-resolve
-  - IP-CIDR,43.159.109.126/32,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.129.0.0/16,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.132.0.0/16,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.152.0.0/16,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.153.0.0/16,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.156.0.0/16,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.159.0.0/16,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.174.0.0/16,🎮 王者荣耀国际版,no-resolve
+  - IP-CIDR,43.175.0.0/16,🎮 王者荣耀国际版,no-resolve
+  
+  
   # 如果游戏更新后出现新 IP，再添加到这里
   # ========== 腾讯反作弊/遥测 ==========
   - DOMAIN-SUFFIX,galileotelemetry.tencent.com,🎮 王者荣耀国际版
