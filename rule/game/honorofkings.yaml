@@ -1,17 +1,29 @@
 payload:
   # ========== 王者荣耀国际版规则（必须放在 GEOSITE,cn 之前）开始==========
   # ========== 游戏域名（最优先）==========
+  # 核心游戏服务（最高优先级）
+  - DOMAIN-KEYWORD,hok,🎮 王者荣耀国际版
+  - DOMAIN-KEYWORD,hokgcloud,🎮 王者荣耀国际版
   - DOMAIN-SUFFIX,intlgame.com,🎮 王者荣耀国际版
   - DOMAIN-SUFFIX,sgameglobal.com,🎮 王者荣耀国际版
+
+  # 腾讯云服务
   - DOMAIN-SUFFIX,iegcom.com,🎮 王者荣耀国际版
-  - DOMAIN-SUFFIX,vasdgame.com,🎮 王者荣耀国际版
-  - DOMAIN-SUFFIX,edgeonedy1.com,🎮 王者荣耀国际版
-  - DOMAIN-SUFFIX,wetest.net,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,gcloudcs.com,🎮 王者荣耀国际版      # 语音
+  - DOMAIN-SUFFIX,gcloudsdk.com,🎮 王者荣耀国际版     # SDK
+
+  # 下载与资源
+  - DOMAIN-SUFFIX,listdl.com,🎮 王者荣耀国际版
   - DOMAIN-SUFFIX,hok5v5.com,🎮 王者荣耀国际版
-  # 游戏关键词（覆盖子域名）
-  - DOMAIN-KEYWORD,hok,🎮 王者荣耀国际版
-  - DOMAIN-KEYWORD,sgame,🎮 王者荣耀国际版
-  - DOMAIN-KEYWORD,hokgcloud,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,gamelet.games,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,wetest.net,🎮 王者荣耀国际版        # 崩溃监控
+
+  # 新加坡/国际节点
+  - DOMAIN-SUFFIX,singaporepaya.com,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,playerinfinite.com,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,vasdgame.com,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,tdos.vip,🎮 王者荣耀国际版
+  - DOMAIN-SUFFIX,edgeonedy1.com,🎮 王者荣耀国际版
   # ========== 精确的游戏服务器 IP（兜底）==========
   # 只包含日志中确认出现的 IP，/32 精确匹配
   - IP-CIDR,43.129.0.0/16,🎮 王者荣耀国际版,no-resolve
