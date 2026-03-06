@@ -8,7 +8,6 @@ payload:
   - DOMAIN-SUFFIX,sgameglobal.com
 
   # 腾讯云服务
-  - DOMAIN-SUFFIX,iegcom.com
   - DOMAIN-SUFFIX,gcloudcs.com      # 语音
   - DOMAIN-SUFFIX,gcloudsdk.com     # SDK
 
