@@ -2,3 +2,4 @@ payload:
   # 下载/登录 → 启动器（自动找能用的）
   - DOMAIN-KEYWORD,download.2.687247097
   - DOMAIN-KEYWORD,v2-down-gamelet
+  - DOMAIN-SUFFIX,sgameglobal.com
