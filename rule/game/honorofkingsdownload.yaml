@@ -1,0 +1,3 @@
+rules:
+  # 下载/登录 → 启动器（自动找能用的）
+  - DOMAIN-KEYWORD,download.2.687247097
