@@ -1,6 +1,6 @@
 payload:
   # 下载/登录 → 启动器（自动找能用的）
-  - DOMAIN-KEYWORD,hokgcloudv6.iegcom.com
+  - DOMAIN-KEYWORD,hokgcloudv6
   - DOMAIN-SUFFIX,sgameglobal.com
   - DOMAIN-SUFFIX,iegcom.com
   - IP-CIDR,43.132.0.0/16,no-resolve
