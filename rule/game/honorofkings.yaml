@@ -12,6 +12,7 @@ payload:
   - DOMAIN-SUFFIX,gcloudsdk.com     # SDK
 
   # 下载与资源
+  - DOMAIN-SUFFIX,appsflyersdk.com
   - DOMAIN-SUFFIX,listdl.com
   - DOMAIN-SUFFIX,hok5v5.com
   - DOMAIN-SUFFIX,gamelet.games
