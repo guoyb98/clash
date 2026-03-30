@@ -1,6 +1,7 @@
 payload:
   # 下载/登录 → 启动器（自动找能用的）
   - DOMAIN-KEYWORD,hokgcloudv6
+  - DOMAIN,intlsdk.sgameglobal.com
   - DOMAIN-SUFFIX,download.sgameglobal.com
   - DOMAIN-SUFFIX,v2-down-gamelet.sgameglobal.com
   - DOMAIN-SUFFIX,iegcom.com
