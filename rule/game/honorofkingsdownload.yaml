@@ -3,47 +3,12 @@ payload:
   # 👇 你原来的旧配置已完整注释保留，留档备用
   ###########################################################################
   # # 下载/登录 → 启动器（自动找能用的）
-  # - DOMAIN-KEYWORD,hokgcloudv6
-  # - DOMAIN,intlsdk.sgameglobal.com
-  # - DOMAIN-SUFFIX,download.sgameglobal.com
-  # - DOMAIN-SUFFIX,v2-down-gamelet.sgameglobal.com
-  # - DOMAIN-SUFFIX,iegcom.com
-  # - DOMAIN-SUFFIX,appsflyersdk.com
-  # - DOMAIN-SUFFIX,edgeonedy1.com
-  # - IP-CIDR,43.132.0.0/16,no-resolve
-  ###########################################################################
-
-  # ====================== 👇 新版 Honor_Of_Kings_Download 👇 ======================
-  # 作用：登录 + 地区检测 + 资源下载 + 统计更新
-  # 对应你主规则里移出来的所有内容
-
-  # 登录/启动/地区校验
   - DOMAIN-KEYWORD,hokgcloudv6
   - DOMAIN,intlsdk.sgameglobal.com
-  - DOMAIN-SUFFIX,honorofkings.com
-  - DOMAIN-SUFFIX,hok-dr.intlgame.com
-  - DOMAIN-SUFFIX,intlgame.com
-
-  # 资源下载（你确认 res 放这里）
-  - DOMAIN,res.sgameglobal.com
   - DOMAIN-SUFFIX,download.sgameglobal.com
   - DOMAIN-SUFFIX,v2-down-gamelet.sgameglobal.com
-  - DOMAIN-SUFFIX,static.hok5v5.com
-  - DOMAIN-SUFFIX,hok5v5.com
-  - DOMAIN-SUFFIX,listdl.com
-  - DOMAIN-SUFFIX,gamelet.games
-  - DOMAIN-SUFFIX,cdn.wetest.net
-  - DOMAIN-SUFFIX,wetest.net
-
-  # 统计/第三方/支付/上报
-  - DOMAIN-SUFFIX,appsflyersdk.com
-  - DOMAIN-SUFFIX,singaporepaya.com
-  - DOMAIN-SUFFIX,playerinfinite.com
-  - DOMAIN-SUFFIX,vasdgame.com
-  - DOMAIN-SUFFIX,tdos.vip
-  - DOMAIN-SUFFIX,edgeonedy1.com
   - DOMAIN-SUFFIX,iegcom.com
-
-  # 反作弊/遥测
-  - DOMAIN-SUFFIX,galileotelemetry.tencent.com
-  - DOMAIN-SUFFIX,anticheatexpert.com
+  - DOMAIN-SUFFIX,appsflyersdk.com
+  - DOMAIN-SUFFIX,edgeonedy1.com
+  - IP-CIDR,43.132.0.0/16,no-resolve
+  ###########################################################################
