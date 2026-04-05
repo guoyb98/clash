@@ -1,30 +1,70 @@
 payload:
   # ========== 王者荣耀国际版规则（必须放在 GEOSITE,cn 之前）开始==========
-  # ========== 游戏域名（最优先）==========
-  # 核心游戏服务（最高优先级）
+
+  ###########################################################################
+  # 👇 下面是你【旧版完整配置】已全部注释，留档备用，不动它
+  ###########################################################################
+  # # ========== 游戏域名（最优先）==========
+  # # 核心游戏服务（最高优先级）
+  # - DOMAIN-KEYWORD,hok
+  # - DOMAIN-KEYWORD,hokgcloud
+  # - DOMAIN-SUFFIX,intlgame.com
+  # - DOMAIN-SUFFIX,sgameglobal.com
+  #
+  # # 腾讯云服务
+  # - DOMAIN-SUFFIX,gcloudcs.com      # 语音
+  # - DOMAIN-SUFFIX,gcloudsdk.com     # SDK
+  #
+  # # 下载与资源
+  # - DOMAIN-SUFFIX,listdl.com
+  # - DOMAIN-SUFFIX,hok5v5.com
+  # - DOMAIN-SUFFIX,gamelet.games
+  # - DOMAIN-SUFFIX,wetest.net        # 崩溃监控
+  #
+  # # 新加坡/国际节点
+  # - DOMAIN-SUFFIX,singaporepaya.com
+  # - DOMAIN-SUFFIX,playerinfinite.com
+  # - DOMAIN-SUFFIX,vasdgame.com
+  # - DOMAIN-SUFFIX,tdos.vip
+  # - DOMAIN-SUFFIX,edgeonedy1.com
+  #
+  # # ========== 精确的游戏服务器 IP（兜底）==========
+  # # 只包含日志中确认出现的 IP，/32 精确匹配
+  # - IP-CIDR,43.129.0.0/16,no-resolve
+  # - IP-CIDR,43.132.0.0/16,no-resolve
+  # - IP-CIDR,43.152.0.0/16,no-resolve
+  # - IP-CIDR,43.153.0.0/16,no-resolve
+  # - IP-CIDR,43.156.0.0/16,no-resolve
+  # - IP-CIDR,43.159.0.0/16,no-resolve
+  # - IP-CIDR,43.174.0.0/16,no-resolve
+  # - IP-CIDR,43.175.0.0/16,no-resolve
+  # - IP-CIDR,43.152.113.56/32,no-resolve
+  #
+  # # 如果游戏更新后出现新 IP，再添加到这里
+  #
+  # # ========== 腾讯反作弊/遥测 ==========
+  # - DOMAIN-SUFFIX,galileotelemetry.tencent.com
+  # - DOMAIN-SUFFIX,anticheatexpert.com
+  ###########################################################################
+  # 👆 你的旧配置完整保留，已全部注释
+  ###########################################################################
+
+  # ====================== 👇 新版 Honor_Of_Kings 👇 ======================
+  # 作用：实时对战 + 低延迟游戏专线
+  # 资源、登录、统计、更新 全部移到 Honor_Of_Kings_Download
+
+  # 核心对战域名
   - DOMAIN-KEYWORD,hok
   - DOMAIN-KEYWORD,hokgcloud
-  - DOMAIN-SUFFIX,intlgame.com
-  - DOMAIN-SUFFIX,sgameglobal.com
+  - DOMAIN,prod-broker.sgameglobal.com    # 实时对战 TCP 5692
+  - DOMAIN,hok-op-sg.sgameglobal.com      # 游戏对战接口
 
-  # 腾讯云服务
-  - DOMAIN-SUFFIX,gcloudcs.com      # 语音
-  - DOMAIN-SUFFIX,gcloudsdk.com     # SDK
+  # 语音/腾讯云SDK
+  - DOMAIN-SUFFIX,gcloudcs.com
+  - DOMAIN-SUFFIX,gcloudsdk.com
 
-  # 下载与资源
-  - DOMAIN-SUFFIX,listdl.com
-  - DOMAIN-SUFFIX,hok5v5.com
-  - DOMAIN-SUFFIX,gamelet.games
-  - DOMAIN-SUFFIX,wetest.net        # 崩溃监控
-
-  # 新加坡/国际节点
-  - DOMAIN-SUFFIX,singaporepaya.com
-  - DOMAIN-SUFFIX,playerinfinite.com
-  - DOMAIN-SUFFIX,vasdgame.com
-  - DOMAIN-SUFFIX,tdos.vip
-  - DOMAIN-SUFFIX,edgeonedy1.com
-  # ========== 精确的游戏服务器 IP（兜底）==========
-  # 只包含日志中确认出现的 IP，/32 精确匹配
+  # ========== IP 兜底方案（一劳永逸，所有43段IP=游戏）==========
+  # 已知游戏IP段
   - IP-CIDR,43.129.0.0/16,no-resolve
   - IP-CIDR,43.132.0.0/16,no-resolve
   - IP-CIDR,43.152.0.0/16,no-resolve
@@ -33,10 +73,8 @@ payload:
   - IP-CIDR,43.159.0.0/16,no-resolve
   - IP-CIDR,43.174.0.0/16,no-resolve
   - IP-CIDR,43.175.0.0/16,no-resolve
-  - IP-CIDR,43.152.113.56/32,no-resolve
-  
-  # 如果游戏更新后出现新 IP，再添加到这里
-  # ========== 腾讯反作弊/遥测 ==========
-  - DOMAIN-SUFFIX,galileotelemetry.tencent.com
-  - DOMAIN-SUFFIX,anticheatexpert.com
+
+  # 全局兜底：所有 43. 开头IP 自动走游戏专线，以后不用加新IP
+  - IP-CIDR,43.0.0.0/8,no-resolve
+
   # ========== 王者荣耀国际版规则（必须放在 GEOSITE,cn 之前）结束==========
