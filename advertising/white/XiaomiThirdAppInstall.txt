@@ -1,0 +1,7 @@
+# 小米/澎湃OS 应用安装安全校验域名
+api.installer.xiaomi.com
+*.sec.miui.com
+sec.miui.com
+adv.sec.miui.com
+flash.sec.miui.com
+connect.rom.miui.com
